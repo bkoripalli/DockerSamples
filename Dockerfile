@@ -1,2 +1,2 @@
 FROM ubuntu:18.10
-CMD "/bin/bash", "-c" , "echo Hello World"]
+CMD ["bin/bash", "-c" , "echo Hello World"]
