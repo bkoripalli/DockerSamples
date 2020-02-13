@@ -1,9 +1,10 @@
-gcloud services enable compute.googleapis.com container.googleapis.com
-gcloud services enable containerregistry.googleapis.com
+gcloud services enable compute.googleapis.com container.googleapis.com containerregistry.googleapis.com
+
+#gcloud services enable containerregistry.googleapis.com
 
 
 Step1: Pull the code.
-
+git clone DockerSample Project
 
 Step2: Build an image
 
@@ -15,7 +16,7 @@ ex: docker push gcr.io/$GOOGLE_CLOUD_PROJECT/date-app
 
 Step4: Create a cluster
 
-ex: gcloud container clusters create date-app-cluster --num-nodes 2 --machine-type n1-standard-1 --zone us-central1-c
+ex: gcloud container clusters create date-app-cluster --num-nodes 2 --machine-type n1-standard-1 --zone asia-southeast1-a
 
 Step5: Create a deployment
 
